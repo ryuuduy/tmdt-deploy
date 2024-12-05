@@ -23,6 +23,6 @@
     "devDependencies": {
         "@types/money": "^0.2.3",
         "concurrently": "^8.2.1",
-        "nodemon": "^3.0.1"
+        "nodemon": "^3.1.7"
     }
 }
