@@ -25,7 +25,7 @@ const PayPalButton = ({ total, onSuccess }) => {
         },
         createOrder: async (data, actions) => {
           try {
-            console.log("tuanduy1");
+            console.log("tuanduy1", data, actions);
             // Request to your backend to create the order
             const response = await fetch("/api/orders", {
               method: "POST",
@@ -49,7 +49,6 @@ const PayPalButton = ({ total, onSuccess }) => {
             console.log("Response Status:", response.status);  // Log the status code
 
             if (!response.ok) {
-              console.log("tuanduy3");
               const errorText = await response.text();
               console.log("Error Response Text:", errorText);  // Log the raw error response
               return; // Stop execution if response is not ok
