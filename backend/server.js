@@ -100,7 +100,6 @@ const createOrder = async (totalAmount) => {
 
 app.post("/api/orders", async (req, res) => {
   try {
-
     const { purchase_units } = req.body; // Expecting purchase_units directly from frontend
 
     if (!purchase_units || purchase_units.length === 0) {
@@ -115,6 +114,7 @@ app.post("/api/orders", async (req, res) => {
 
     // Call the createOrder function to create the order with PayPal
     const { orderId, httpStatusCode } = await createOrder(totalAmount);
+    console.log("Order ID:", orderId);
     // Return the PayPal order ID back to the frontend
     res.status(201).json({ orderID: orderId });
   } catch (error) {
@@ -124,7 +124,7 @@ app.post("/api/orders", async (req, res) => {
 });
 
 
-app.post("/api/order/:orderID/capture", async (req, res) => {
+app.post("/api/orders/:orderID/capture", async (req, res) => {
   try {
     const { orderID } = req.params;
     const { jsonResponse, httpStatusCode } = await captureOrder(orderID);
