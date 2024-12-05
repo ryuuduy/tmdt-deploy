@@ -48,11 +48,11 @@ const PayPalButton = ({ total, onSuccess }) => {
             });
             console.log("Response Status:", response.status);  // Log the status code
 
-            // if (!response.ok) {
-            //   const errorText = await response.text();
-            //   console.log("Error Response Text:", errorText);  // Log the raw error response
-            //   return; // Stop execution if response is not ok
-            // }
+            if (!response.ok) {
+              const errorText = await response.text();
+              console.log("Error Response Text:", errorText);  // Log the raw error response
+              return; // Stop execution if response is not ok
+            }
             console.log("orderDate");
             const orderData = await response.json();
             console.log("orderDate", orderData);
