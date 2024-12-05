@@ -68,7 +68,7 @@ const PayPalButton = ({ total, onSuccess }) => {
         },
 
         onApprove: async (data, actions) => {
-          const response = await fetch(`/api/orders/${data.orderID}/capture`, {
+          const response = await fetch(`/api/order/${data.orderID}/capture`, {
             method: "POST",
             body: JSON.stringify({
               orderID: data.orderID
