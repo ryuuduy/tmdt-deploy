@@ -13,7 +13,6 @@ import bodyParser from "body-parser";
 import { createClient } from "@supabase/supabase-js";
 import fx from "money";
 
-// Setup môi trường
 dotenv.config();
 const app = express();
 app.use(bodyParser.json());
