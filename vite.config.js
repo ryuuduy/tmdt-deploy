@@ -13,7 +13,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://s-ticket.vercel.app",
+        target: "https://s-ticket.vercel.app/",
         changeOrigin: true,
         secure: false,
       },

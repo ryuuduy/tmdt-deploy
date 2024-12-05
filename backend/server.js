@@ -100,6 +100,7 @@ const createOrder = async (totalAmount) => {
 
 app.post("/api/orders", async (req, res) => {
   try {
+
     const { purchase_units } = req.body; // Expecting purchase_units directly from frontend
 
     if (!purchase_units || purchase_units.length === 0) {
