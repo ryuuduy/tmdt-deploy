@@ -38,8 +38,7 @@ const PayPalButton = ({ total, onSuccess }) => {
                   {
                     amount: {
                       currency_code: "USD",
-                      // value: total.toString(),  // Amount in the smallest unit (cents) if needed
-                      value: total,
+                      value: total.toString(),  // Amount in the smallest unit (cents) if needed
                     },
                   },
                 ],
