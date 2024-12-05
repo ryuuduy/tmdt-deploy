@@ -25,8 +25,6 @@ const PayPalButton = ({ total, onSuccess }) => {
         },
         createOrder: async (data, actions) => {
           try {
-            console.log("data", data);
-            console.log("actions", actions);
             // Request to your backend to create the order
             const response = await fetch("/api/orders", {
               method: "POST",
@@ -40,7 +38,8 @@ const PayPalButton = ({ total, onSuccess }) => {
                   {
                     amount: {
                       currency_code: "USD",
-                      value: total.toString(),  // Amount in the smallest unit (cents) if needed
+                      // value: total.toString(),  // Amount in the smallest unit (cents) if needed
+                      value: total,
                     },
                   },
                 ],
