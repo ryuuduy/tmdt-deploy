@@ -1,0 +1,296 @@
+[
+    {
+        "id": 1,
+        "title": "YÊU HÒA BÌNH 2024 YÊU HÒA BÌNH 2024 YÊU HÒA BÌNH 2024",
+        "category": "Âm nhạc",
+        "image": "/assets/images/yhb.png",
+        "date": "30 tháng 11, 2024",
+        "time": "13:00 - 23:00",
+        "price": 599000,
+        "isSoldOut": true,
+        "description": "",
+        "location": {
+            "name": "Nhà Thi Đấu Nguyễn Du",
+            "address": "116 Nguyễn Du, Phường Bến Thành, Quận 1, Thành Phố Hồ Chí Minh"
+        },
+        "organizer": {
+            "name": "CÔNG TY CỔ PHẦN SỰ KIỆN VÀ TRUYỀN THÔNG ZONE B",
+            "description": "Multimedia Communications | Event Organization | Production"
+        },
+        "tickets": [
+            {
+                "id": 1,
+                "name": "Vé VIP",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 599000,
+                "quantity": 100,
+                "isSoldOut": true
+            },
+            {
+                "id": 2,
+                "name": "Vé Thường",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 299000,
+                "quantity": 100,
+                "isSoldOut": false
+            }, 
+            {
+                "id": 3,
+                "name": "Vé Đặc Biệt",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 999000,
+                "quantity": 100,
+                "isSoldOut": false
+            }
+        ],
+        "approveStatus": "pending"
+    },
+    {
+        "id": 2,
+        "title": "YÊU HÒA BÌNH 2024 YÊU HÒA BÌNH 2024 YÊU HÒA BÌNH 2024",
+        "category": "Âm nhạc",
+        "image": "/assets/images/yhb.png",
+        "date": "30 tháng 11, 2024",
+        "time": "13:00 - 23:00",
+        "price": 599000,
+        "isSoldOut": true,
+        "description": "",
+        "location": {
+            "name": "Nhà Thi Đấu Nguyễn Du",
+            "address": "116 Nguyễn Du, Phường Bến Thành, Quận 1, Thành Phố Hồ Chí Minh"
+        },
+        "organizer": {
+            "name": "CÔNG TY CỔ PHẦN SỰ KIỆN VÀ TRUYỀN THÔNG ZONE B",
+            "description": "Multimedia Communications | Event Organization | Production"
+        },
+        "tickets": [
+            {
+                "id": 1,
+                "name": "Vé VIP",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 599000,
+                "quantity": 100,
+                "isSoldOut": true
+            },
+            {
+                "id": 2,
+                "name": "Vé Thường",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 299000,
+                "quantity": 100,
+                "isSoldOut": false
+            }, 
+            {
+                "id": 3,
+                "name": "Vé Đặc Biệt",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 999000,
+                "quantity": 100,
+                "isSoldOut": false
+            }
+        ],
+        "approveStatus": "pending"
+    },
+    {
+        "id": 3,
+        "title": "YÊU HÒA BÌNH 2024 YÊU HÒA BÌNH 2024 YÊU HÒA BÌNH 2024",
+        "category": "Âm nhạc",
+        "image": "/assets/images/yhb.png",
+        "date": "30 tháng 11, 2024",
+        "time": "13:00 - 23:00",
+        "price": 599000,
+        "isSoldOut": true,
+        "description": "",
+        "location": {
+            "name": "Nhà Thi Đấu Nguyễn Du",
+            "address": "116 Nguyễn Du, Phường Bến Thành, Quận 1, Thành Phố Hồ Chí Minh"
+        },
+        "organizer": {
+            "name": "CÔNG TY CỔ PHẦN SỰ KIỆN VÀ TRUYỀN THÔNG ZONE B",
+            "description": "Multimedia Communications | Event Organization | Production"
+        },
+        "tickets": [
+            {
+                "id": 1,
+                "name": "Vé VIP",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 599000,
+                "quantity": 100,
+                "isSoldOut": true
+            },
+            {
+                "id": 2,
+                "name": "Vé Thường",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 299000,
+                "quantity": 100,
+                "isSoldOut": false
+            }, 
+            {
+                "id": 3,
+                "name": "Vé Đặc Biệt",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 999000,
+                "quantity": 100,
+                "isSoldOut": false
+            }
+        ],
+        "approveStatus": "pending"
+    },
+    {
+        "id": 4,
+        "title": "YÊU HÒA BÌNH 2024 YÊU HÒA BÌNH 2024 YÊU HÒA BÌNH 2024",
+        "category": "Âm nhạc",
+        "image": "/assets/images/yhb.png",
+        "date": "30 tháng 11, 2024",
+        "time": "13:00 - 23:00",
+        "price": 599000,
+        "isSoldOut": true,
+        "description": "",
+        "location": {
+            "name": "Nhà Thi Đấu Nguyễn Du",
+            "address": "116 Nguyễn Du, Phường Bến Thành, Quận 1, Thành Phố Hồ Chí Minh"
+        },
+        "organizer": {
+            "name": "CÔNG TY CỔ PHẦN SỰ KIỆN VÀ TRUYỀN THÔNG ZONE B",
+            "description": "Multimedia Communications | Event Organization | Production"
+        },
+        "tickets": [
+            {
+                "id": 1,
+                "name": "Vé VIP",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 599000,
+                "quantity": 100,
+                "isSoldOut": true
+            },
+            {
+                "id": 2,
+                "name": "Vé Thường",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 299000,
+                "quantity": 100,
+                "isSoldOut": false
+            }, 
+            {
+                "id": 3,
+                "name": "Vé Đặc Biệt",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 999000,
+                "quantity": 100,
+                "isSoldOut": false
+            }
+        ],
+        "approveStatus": "approved"
+    },
+    {
+        "id": 5,
+        "title": "YÊU HÒA BÌNH 2024 YÊU HÒA BÌNH 2024 YÊU HÒA BÌNH 2024",
+        "category": "Âm nhạc",
+        "image": "/assets/images/yhb.png",
+        "date": "30 tháng 11, 2024",
+        "time": "13:00 - 23:00",
+        "price": 599000,
+        "isSoldOut": true,
+        "description": "",
+        "location": {
+            "name": "Nhà Thi Đấu Nguyễn Du",
+            "address": "116 Nguyễn Du, Phường Bến Thành, Quận 1, Thành Phố Hồ Chí Minh"
+        },
+        "organizer": {
+            "name": "CÔNG TY CỔ PHẦN SỰ KIỆN VÀ TRUYỀN THÔNG ZONE B",
+            "description": "Multimedia Communications | Event Organization | Production"
+        },
+        "tickets": [
+            {
+                "id": 1,
+                "name": "Vé VIP",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 599000,
+                "quantity": 100,
+                "isSoldOut": true
+            },
+            {
+                "id": 2,
+                "name": "Vé Thường",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 299000,
+                "quantity": 100,
+                "isSoldOut": false
+            }, 
+            {
+                "id": 3,
+                "name": "Vé Đặc Biệt",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 999000,
+                "quantity": 100,
+                "isSoldOut": false
+            }
+        ],
+        "approveStatus": "approved"
+    },
+    {
+        "id": 6,
+        "title": "YÊU HÒA BÌNH 2024 YÊU HÒA BÌNH 2024 YÊU HÒA BÌNH 2024",
+        "category": "Âm nhạc",
+        "image": "/assets/images/yhb.png",
+        "date": "30 tháng 11, 2024",
+        "time": "13:00 - 23:00",
+        "price": 599000,
+        "isSoldOut": true,
+        "description": "",
+        "location": {
+            "name": "Nhà Thi Đấu Nguyễn Du",
+            "address": "116 Nguyễn Du, Phường Bến Thành, Quận 1, Thành Phố Hồ Chí Minh"
+        },
+        "organizer": {
+            "name": "CÔNG TY CỔ PHẦN SỰ KIỆN VÀ TRUYỀN THÔNG ZONE B",
+            "description": "Multimedia Communications | Event Organization | Production"
+        },
+        "tickets": [
+            {
+                "id": 1,
+                "name": "Vé VIP",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 599000,
+                "quantity": 100,
+                "isSoldOut": true
+            },
+            {
+                "id": 2,
+                "name": "Vé Thường",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 299000,
+                "quantity": 100,
+                "isSoldOut": false
+            }, 
+            {
+                "id": 3,
+                "name": "Vé Đặc Biệt",
+                "date": "30 tháng 11, 2024",
+                "time": "13:00 - 23:00",
+                "price": 999000,
+                "quantity": 100,
+                "isSoldOut": false
+            }
+        ],
+        "approveStatus": "declined"
+    }
+]
