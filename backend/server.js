@@ -12,22 +12,33 @@ import {
 import bodyParser from "body-parser";
 import { createClient } from '@supabase/supabase-js'
 import fx from "money";
+import cors from "cors";
+
+app.use(
+  cors({
+    origin: "https://s-ticket.vercel.app", // Frontend domain
+    methods: ["GET", "POST"],
+  })
+);
 
 // Set exchange rates and base currency
 fx.base = "VND";  // Set the base currency to VND
 fx.rates = {
-    VND: 1,        // 1 VND = 1 VND
-    USD: 0.000039,  // Example rate: 1 VND = 0.000042 USD (you can replace this with the actual rate)
+  VND: 1,        // 1 VND = 1 VND
+  USD: 0.000039,  // Example rate: 1 VND = 0.000042 USD (you can replace this with the actual rate)
 };
 
 dotenv.config();
-const accessToken = "A21AAKfkBl5ruoTptEo1J2hnfj2ySZHJAFAtQP1sQ1_P0iR0eBSKCiySsXifdBq2_HxYP1P7bmgyQ7KOFDfcNbqAympdkcCJg"
+// const accessToken = "A21AAKfkBl5ruoTptEo1J2hnfj2ySZHJAFAtQP1sQ1_P0iR0eBSKCiySsXifdBq2_HxYP1P7bmgyQ7KOFDfcNbqAympdkcCJg"
+const accessToken = process.env.PAYPAL_ACCESS_TOKEN;
+
 
 const app = express();
 app.use(bodyParser.json()); // Middleware to parse JSON bodies
 
-const supabaseUrl = process.env.VITE_SUPABASE_URL;
-const supabaseKey = process.env.VITE_SUPABASE_ANON_KEY;
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_ANON_KEY;
+
 
 if (!supabaseUrl || !supabaseKey) {
   throw new Error("Supabase URL and Key must be provided!");
@@ -114,25 +125,25 @@ app.post("/api/orders", async (req, res) => {
 
     // Call the createOrder function to create the order with PayPal
     const { orderId, httpStatusCode } = await createOrder(totalAmount);
-      // Return the PayPal order ID back to the frontend
-      res.status(201).json({ orderID: orderId });
-      } catch (error) {
-        console.error("Failed to create order:", error);
-        res.status(500).json({ error: "Failed to create order be." });
-      }
-  });
+    // Return the PayPal order ID back to the frontend
+    res.status(201).json({ orderID: orderId });
+  } catch (error) {
+    console.error("Failed to create order:", error);
+    res.status(500).json({ error: "Failed to create order be." });
+  }
+});
 
 
-  app.post("/api/orders/:orderID/capture", async (req, res) => {
-    try {
-      const { orderID } = req.params;
-      const { jsonResponse, httpStatusCode } = await captureOrder(orderID);
-      res.status(httpStatusCode).json(jsonResponse);
-    } catch (error) {
-      console.error("Failed to create order:", error);
-      res.status(500).json({ error: "Failed to capture order capture." });
-    }
-  });
+app.post("/api/orders/:orderID/capture", async (req, res) => {
+  try {
+    const { orderID } = req.params;
+    const { jsonResponse, httpStatusCode } = await captureOrder(orderID);
+    res.status(httpStatusCode).json(jsonResponse);
+  } catch (error) {
+    console.error("Failed to create order:", error);
+    res.status(500).json({ error: "Failed to capture order capture." });
+  }
+});
 
 app.listen(PORT, () => {
   console.log(`Node server listening at http://localhost:${PORT}/`);
