@@ -26,7 +26,7 @@ const PayPalButton = ({ total, onSuccess }) => {
         createOrder: async (data, actions) => {
           try {
             // Request to your backend to create the order
-            const response = await fetch("http://localhost:3000/api/orders", {
+            const response = await fetch("/api/orders", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
